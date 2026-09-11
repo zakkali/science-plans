@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطط الفصلية لمواد العلوم 2026-2027</title>
+    <!-- استدعاء خط كايرو من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f9;
+            --primary-color: #0284c7; /* أزرق هادئ ومريح للعين */
+            --primary-hover: #0369a1;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* حركات الظهور التدرجي */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.2s; }
+        .card:nth-child(2) { animation-delay: 0.4s; }
+        .card:nth-child(3) { animation-delay: 0.6s; }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+            animation-delay: 0.8s;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.39);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.23);
+        }
+
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: currentColor;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            width: 100%;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        footer .developer-name {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 0.4rem;
+        }
+
+        /* استجابة الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>الخطط الفصلية لمواد العلوم</h1>
+        <p class="subtitle">العام الدراسي 2026 / 2027 م - الفصلين الدراسيين الأول والثاني</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>شمولية المراحل</h3>
+            <p>تغطي الخطط جميع صفوف المراحل الدراسية بدءاً من الصف الأول الأساسي وحتى الصف الثاني عشر، لجميع تفرعات مادة العلوم (علوم، فيزياء، كيمياء، أحياء، وعلوم وبيئة).</p>
+        </div>
+        <div class="card">
+            <h3>الأنظمة المدرسية</h3>
+            <p>تم إعداد وتجهيز مسارين للخطط لتتناسب تماماً مع النصاب الزمني لمدارس الفترة الواحدة ومدارس الفترتين.</p>
+        </div>
+        <div class="card">
+            <h3>المرجعية الرسمية</h3>
+            <p>صُممت الخطط وهيكلتها بناءً على المحددات الواردة في النشرة التوجيهية لمواد العلوم الصادرة عن وزارة التربية والتعليم للعام الدراسي المذكور.</p>
+        </div>
+    </div>
+
+    <div class="download-section">
+        <a href="https://drive.google.com/drive/folders/184iJGo1QS78SyMog4tUDMOHmCDJavmqg?usp=sharing" target="_blank" class="download-btn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.33 10.18a4.5 4.5 0 0 0-8.8-1.57 3.5 3.5 0 0 0-4.38 4.24 4 4 0 0 0 1.5 7.6h11.5a4.5 4.5 0 0 0 .18-8.99zM14 13h-2v3h-2v-3H8l4-4 4 4z"/>
+            </svg>
+            تحميل الخطط من Google Drive
+        </a>
+    </div>
+
+    <footer>
+        <p>تم إعداد هذا الدليل لتسهيل عمل المعلمين والمعلمات. جميع الحقوق محفوظة &copy; 2026</p>
+        <p class="developer-name">من إعداد المطور: زكي المطعني البكري</p>
+    </footer>
+
+</body>
+</html>
