@@ -45,6 +45,19 @@
             }
         }
 
+        /* حركة النبض لزر التحميل لجذب الانتباه */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(2, 132, 199, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(2, 132, 199, 0);
+            }
+        }
+
         header {
             text-align: center;
             margin-top: 4rem;
@@ -113,6 +126,9 @@
             opacity: 0;
             animation: fadeInUp 0.8s ease-out forwards;
             animation-delay: 0.8s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .download-btn {
@@ -128,12 +144,14 @@
             border-radius: 50px;
             box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.39);
             transition: all 0.3s ease;
+            /* تطبيق حركة النبض */
+            animation: pulse 2s infinite;
         }
 
         .download-btn:hover {
             background-color: var(--primary-hover);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.23);
+            animation-play-state: paused; /* إيقاف النبض مؤقتاً عند مرور الماوس */
         }
 
         .download-btn svg {
@@ -141,6 +159,18 @@
             height: 24px;
             margin-right: 10px;
             fill: currentColor;
+        }
+
+        /* تنسيق تنويه الذكاء الاصطناعي */
+        .ai-notice {
+            margin-top: 1.5rem;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: inline-block;
         }
 
         footer {
@@ -184,7 +214,7 @@
         </div>
         <div class="card">
             <h3>المرجعية الرسمية</h3>
-            <p>صُممت الخطط وهيكلتها بناءً على المحددات الواردة في النشرة التوجيهية لمواد العلوم الصادرة عن وزارة التربية والتعليم للعام الدراسي المذكور.</p>
+            <p>صُممت الخطط وهيكلتها بناءً على المحددات الواردة في النشرة التوجيهية لمواد العلوم الصادرة عن وزارة التعليم للعام الدراسي المذكور.</p>
         </div>
     </div>
 
@@ -195,6 +225,11 @@
             </svg>
             تحميل الخطط من Google Drive
         </a>
+        
+        <!-- إضافة التنويه الخاص بالذكاء الاصطناعي -->
+        <div class="ai-notice">
+            ✨ تنويه: تم إعداد وهيكلة هذه الخطط بالاستعانة بتقنيات الذكاء الاصطناعي.
+        </div>
     </div>
 
     <footer>
